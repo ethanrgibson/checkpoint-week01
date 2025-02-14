@@ -1,0 +1,15 @@
+.hardware-bg {
+  background-image: url(https://images.unsplash.com/photo-1597424216809-3ba9864aeb18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  min-height: 80dvh;
+  opacity: .6;
+}
+
+.transparent-bg {
+  background-color: rgba(0, 0, 0, 0.550);
+  background: cover;
+}
+
+.hero-row {
+  min-height: 80dvh;
+}
