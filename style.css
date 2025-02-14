@@ -18,3 +18,21 @@
   background-size: cover;
   background-color: white;
 }
+
+.magic-card {
+  position: relative;
+  top: 10rem;
+}
+
+.extreme-centering {
+  margin-top: 4rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+}
+
+@media screen AND (max-width: 767.98px) {
+  .magic-card {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
