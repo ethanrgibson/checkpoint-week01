@@ -39,10 +39,27 @@
   font-size: 9rem;
 }
 
+.center-box {
+  margin: -2rem;
+}
+
+
 
 @media screen AND (max-width: 767.98px) {
   .magic-card {
     position: static;
     margin-bottom: 2rem;
+  }
+
+  .center-box {
+    margin: 0;
+  }
+
+  .right-box {
+    margin: 10px;
+  }
+
+  .left-box {
+    margin: 10px;
   }
 }
