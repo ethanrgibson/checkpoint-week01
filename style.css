@@ -21,7 +21,7 @@
 
 .magic-card {
   position: relative;
-  top: 10rem;
+  top: 5rem;
 }
 
 .extreme-centering {
@@ -29,6 +29,16 @@
   margin-right: 2rem;
   margin-bottom: 0rem;
 }
+
+.screw-pic {
+  margin-top: 1rem;
+  max-width: 50dvh;
+}
+
+.big-icon {
+  font-size: 9rem;
+}
+
 
 @media screen AND (max-width: 767.98px) {
   .magic-card {
