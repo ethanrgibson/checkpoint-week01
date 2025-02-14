@@ -13,3 +13,8 @@
 .hero-row {
   min-height: 80dvh;
 }
+
+.bg-hero-form {
+  background-size: cover;
+  background-color: white;
+}
