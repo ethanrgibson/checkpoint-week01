@@ -39,6 +39,15 @@
   font-size: 9rem;
 }
 
+.med-icon {
+  font-size: 4rem;
+
+}
+
+.big-padding {
+  padding: 8rem;
+}
+
 .center-box {
   margin: -2rem;
 }
