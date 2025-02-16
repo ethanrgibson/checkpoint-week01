@@ -13,12 +13,15 @@
   <link rel="stylesheet" href="style.css">
   <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
     defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <title>Hardware Site</title>
 </head>
 
 <body class="=debug-script">
   <!-- NOTE Header -->
-  <header>
+  <header class="sticky-top bg-white">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2">
@@ -31,20 +34,40 @@
 
     </div>
   </header>
-  <!-- TODO Special font for all h tags -->
   <main>
     <!-- NOTE Hero Section w/floating card -->
     <section class="container-fluid hardware-bg">
-      <div class="row hero-row transparent-bg align-items-center">
-        <div class="left col-md-6">
-          <div class=" mt-2 bg-white text-black">
-            Form Goes here
+      <div class="row hero-row transparent-bg align-items-center justify-content-evenly">
+        <div class="left col-md-2 d-md-block">
+          <div class="bg-white text-black d-flex justify-content-around">
+            <form>
+              <span class="text-primary">Sign Up For Screwy Deals</span>
+              <div class="pb-3">
+                <label for="Name">Name</label>
+                <input id="name" type="text">
+              </div>
+              <div class="text-black pb-3">
+                <label for="Email">Email
+                  <input type="text" id="email">
+                </label>
+              </div>
+              <div class="form-text-inline pb-3">
+                <label for="Phone">Phone</label>
+                <input type="text" id="Phone">
+                <label for="ext">EXT</label>
+                <input type="text" id="EXT">
+              </div>
+              <div>
+                <label for="Message">Message</label>
+                <input type="text" id="Message">
+              </div>
+            </form>
           </div>
         </div>
-        <div class="right col-md-6">
-          <div class="d-flex flex-wrap text-white justify-content-center">
-            <div class="text-start extreme-centering">
-              <h1>
+        <div class="right col-md-4">
+          <div class="d-flex text-white align-items-start">
+            <div class="text-start">
+              <h1 class="solway-extrabold">
                 Check Out The Hardware
               </h1>
               <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ipsam perspiciatis beatae esse
@@ -62,7 +85,7 @@
       <div class="row bg-primary align-items-center">
         <div class="col-md-6">
           <div class="left text-start text-white p-md-5">
-            <h2 class="pb-md-2">
+            <h2 class="pb-md-2 solway-bold">
               We love hardware, like family.
             </h2>
             <p class=" mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -78,29 +101,29 @@
           <div class="right shadow-lg rounded-2 d-flex flex-md-column p-2 p-md-2 bg-white magic-card">
             <div class="mt-md-3 ms-md-5">
               <div class="d-flex pt-1 pb-3">
-                <span class="fs-3 mdi mdi-screw-round-top">
+                <span class="text-primary fs-3 mdi mdi-screw-round-top">
                 </span>
-                <h3 class="text-black ps-3"> We Have Screw</h3>
+                <h4 class="solway-regular text-black ps-3"> We Have Screw</h4>
               </div>
               <div class="d-flex pb-3">
-                <span class="fs-3 mdi mdi-screw-round-top">
+                <span class="text-primary fs-3 mdi mdi-screw-round-top">
                 </span>
-                <h3 class="text-black ps-3"> Here We Have Screw</h3>
+                <h4 class="solway-regular text-black ps-3"> Here We Have Screw</h4>
               </div>
               <div class="d-flex pb-3">
-                <span class="fs-3 mdi mdi-screw-round-top">
+                <span class="text-primary fs-3 mdi mdi-screw-round-top">
                 </span>
-                <h3 class="text-black ps-3"> Again, We Have Screw</h3>
+                <h4 class="solway-regular text-black ps-3"> Again, We Have Screw</h4>
               </div>
               <div class="d-flex pb-3">
-                <span class="fs-3 mdi mdi-screw-round-top">
+                <span class="text-primary fs-3 mdi mdi-screw-round-top">
                 </span>
-                <h3 class="text-black ps-3"> Similarly, We Have Screw</h3>
+                <h4 class="solway-regular text-black ps-3"> Similarly, We Have Screw</h4>
               </div>
               <div class="d-flex pb-3">
-                <span class="fs-3 mdi mdi-screw-round-top">
+                <span class="text-primary fs-3 mdi mdi-screw-round-top">
                 </span>
-                <h3 class="text-black ps-3"> And Lastly, We Have Screw</h3>
+                <h4 class="solway-regular text-black ps-3"> And Lastly, We Have Screw</h4>
               </div>
             </div>
           </div>
@@ -123,10 +146,10 @@
         <div class="col-12 col-md-6">
           <div class="right d-flex justify-content-center text-center flex-column flex-md-column extreme-centering">
             <div class="text-center align-items-center">
-              <span class="big-icon text-black mdi mdi-toolbox"></span>
+              <span class="text-primary big-icon mdi mdi-toolbox"></span>
             </div>
             <div class="d-flex flex-column flex-md-column">
-              <h4>
+              <h4 class="solway-medium">
                 We are all about screws, screwdrviers, screw machines, and screw things.
               </h4>
               <p class="text-start">
@@ -136,7 +159,7 @@
                 molestias vero omnis reprehenderit sit magni. Sunt placeat numquam quas cumque temporibus!
               </p>
               <div class=" d-flex justify-content-end">
-                <button class="btn btn-primary btn-lg">
+                <button class="solway-light btn btn-primary btn-lg rounded-pill">
                   Get Screws
                 </button>
               </div>
@@ -155,10 +178,10 @@
             <div class="p-3">
               <span class="text-start mdi mdi-format-quote-open">
               </span>
-              <p class="fs-6 text-center">
+              <p class="fs-6 text-center fst-italic">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, incidunt? Id dolores pariatur nisi illum.
               </p>
-              <p class="text-end pe-2 pe-md-2">
+              <p class="text-end pe-2 pe-md-2 fw-bold text-primary">
                 -Mr.Phillips
               </p>
             </div>
@@ -174,12 +197,12 @@
             <div class="p-3">
               <span class="text-start mdi mdi-format-quote-open">
               </span>
-              <p class="fs-6 text-center">
+              <p class="fs-6 text-center fst-italic">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore officia cumque veniam nisi id est,
                 dolore libero, hic et necessitatibus delectus adipisci error omnis! Molestias reprehenderit ratione nisi
                 necessitatibus vero.
               </p>
-              <p class="text-end pe-2 pe-md-2">
+              <p class="text-end pe-2 pe-md-2 fw-bold text-primary">
                 -Screw Jones
               </p>
             </div>
@@ -190,29 +213,70 @@
             <div class="p-3">
               <span class="text-start mdi mdi-format-quote-open">
               </span>
-              <p class="fs-6 text-center">
+              <p class="fs-6 text-center fst-italic">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, incidunt? Id dolores pariatur nisi illum.
               </p>
-              <p class="text-end pe-2 pe-md-2">
+              <p class="text-end pe-2 pe-md-2 fw-bold text-primary">
                 -Scrappy 'n' Screwy
               </p>
             </div>
           </div>
         </div>
-
       </div>
-
     </section>
-    <!-- NOTE Footer -->
+    <!-- NOTE Footer Map Image then footer -->
+    <!-- TODO Fix Image -->
     <section class="container-fluid">
       <div class="row">
-        <div class="col-md-12 p-0">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1594935975218-a3596da034a3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        <div class="col-md-12 col-12 p-0">
+          <img class="map-img"
+            src="https://images.unsplash.com/photo-1586449480537-3a22cf98b04c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
         </div>
       </div>
     </section>
+
+    <section class="container-fluid">
+      <div class="row bg-secondary bg-opacity-50 justify-content-around">
+        <div class="col-3 col-md-2 text-center">
+          <div class="p-5 text-start">
+            <p class="fw-bold">
+              Come Say What's Up!
+            </p>
+            <span>
+              2100 Torque Lane,
+              Foley, Alabama 834646
+            </span>
+          </div>
+        </div>
+        <div class="col-3 col-md-2 text-center">
+          <div class="p-5 text-start">
+            <p class="fw-bold">
+              Contact
+            </p>
+            <p>
+              (208) 911-91111
+            </p>
+            <span>
+              Mon-Wed/ 1:00AM - 1:00AM
+            </span>
+          </div>
+        </div>
+        <div class="col-3 col-md-2 text-center">
+          <div class="p-5 text-start">
+            <p class="fw-bold">
+              Socials
+            </p>
+            <div class="small-icon text-primary">
+              <span class="mdi mdi-instagram"></span>
+              <span class="mdi mdi-spotify"></span>
+              <span class="mdi mdi-github"></span>
+              <span class="mdi mdi-screw-machine-flat-top"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </sections>
   </main>
 </body>
 
